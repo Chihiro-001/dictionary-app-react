@@ -11,7 +11,7 @@ export default function Dictionary() {
     // documentation: https://dictionaryapi.dev/
     const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
-    alert(`Searching ${keyword} definition`);
+    // alert(`Searching ${keyword} definition`);
   }
   function handleResponse(response) {
     console.log(response.data[0]);
@@ -33,6 +33,7 @@ export default function Dictionary() {
         />
         <button type="submit">Search</button>
       </form>
+      {/* Show deefinitions and examples */}
       <Results results={results} />
     </div>
   );
