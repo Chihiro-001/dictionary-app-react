@@ -9,9 +9,22 @@ function App() {
       </header>
       <footer>
         This is coded by Chihiro Ismail and open-sourced on
-        <a href="https://github.com/Chihiro-001/dictionary-app-react">GitHub</a>
+        <a
+          href="https://github.com/Chihiro-001/dictionary-app-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
         and is hosted on{" "}
-        <a href="https://incomparable-quokka-38a228.netlify.app">Netlify</a>.
+        <a
+          href="https://incomparable-quokka-38a228.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>
+        .
       </footer>
     </div>
   );
