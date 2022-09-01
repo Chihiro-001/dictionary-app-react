@@ -14,7 +14,6 @@ export default function Dictionary() {
     // alert(`Searching ${keyword} definition`);
   }
   function handleResponse(response) {
-    console.log(response.data[0]);
     setResults(response.data[0]);
   }
   function handleKeywordChange(event) {
