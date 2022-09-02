@@ -4,7 +4,7 @@ import "./Dictionary.css";
 import axios from "axios";
 
 export default function Dictionary() {
-  const [keyword, setKeyword] = useState("sun");
+  const [keyword, setKeyword] = useState("sunrise");
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
 
