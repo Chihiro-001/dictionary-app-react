@@ -3,6 +3,10 @@ body {
   color: #1a1a1a;
   margin: 0;
 }
+.App footer {
+  margin-top: 20px;
+  text-align: center;
+}
 .App footer a {
   text-decoration: none;
 }

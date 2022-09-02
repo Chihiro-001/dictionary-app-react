@@ -1,6 +1,13 @@
 .Results section {
+  background-color: #e0fcff;
   border: 8px solid #09bdff;
   border-radius: 10px;
   margin-top: 20px;
   padding: 20px;
+  align-items: center;
+}
+.Results h2 {
+  font-size: calc(4.325rem + 1vw);
+  font-weight: 700;
+  margin-bottom: 0;
 }
