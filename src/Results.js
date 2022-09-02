@@ -8,7 +8,7 @@ export default function Results(props) {
     return (
       <div className="Results">
         <section>
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col">
               <h2>{props.results.word}</h2>
             </div>

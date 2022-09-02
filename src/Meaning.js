@@ -1,6 +1,6 @@
 import React from "react";
 import "./Meaning.css";
-// import Examples from "./Examples";
+import Examples from "./Examples";
 import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
@@ -9,20 +9,17 @@ export default function Meaning(props) {
     <div className="Meaning">
       <h3>{props.meaning.partOfSpeech}</h3>
       {/* If there are multiple definitions and examples you can loop through */}
-      <section>
+      <section className="meaning-section">
         {props.meaning.definitions.map(function (definition, index) {
           return (
             <div key={index}>
               <p>
                 <strong>Definition: </strong>
+                <br />
                 {definition.definition}
                 <br />
-                {/* Not all words have examples and synonyms, 
-              so thinking of making a component just for Example.*/}
-                {/* <Examples examples={definition.example} /> */}
-                <strong>Example: </strong>
-                <em>{definition.example}</em>
               </p>
+              <Examples examples={definition.example} />
               <Synonyms synonyms={definition.synonyms} />
             </div>
           );

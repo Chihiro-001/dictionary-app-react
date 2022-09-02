@@ -1,4 +1,8 @@
-.Meaning section {
+.Meaning .meaning-section {
   border: none;
   background-color: white;
+  margin-top: 0;
+}
+.Meaning strong {
+  font-size: 26px;
 }

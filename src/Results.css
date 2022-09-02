@@ -2,9 +2,9 @@
   background-color: #e0fcff;
   border: 8px solid #09bdff;
   border-radius: 10px;
+  box-shadow: 0 10px 10px rgb(0 0 0 /10%);
   margin-top: 20px;
   padding: 20px;
-  align-items: center;
 }
 .Results h2 {
   font-size: calc(4.325rem + 1vw);
