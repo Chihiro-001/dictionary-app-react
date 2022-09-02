@@ -1,0 +1,12 @@
+.Phonetics {
+  font-size: 18px;
+  height: 60px;
+}
+.Phonetics a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: all 150ms ease-in-out;
+}
+.Phonetics a:hover {
+  font-weight: 700;
+}
