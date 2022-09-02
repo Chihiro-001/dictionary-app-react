@@ -1,0 +1,22 @@
+.Dictionary nav {
+  background-color: #00248a;
+  color: white;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+.Dictionary .title {
+  font-size: 24px;
+}
+.Dictionary input {
+  border: none;
+  border-radius: 7px 0 0 7px;
+}
+.Dictionary button {
+  border-radius: 0 7px 7px 0;
+  border: none;
+  background-color: white;
+}
