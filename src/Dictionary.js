@@ -49,7 +49,9 @@ export default function Dictionary() {
           </div>
         </nav>
         {/* Show deefinitions and examples */}
-        <Results results={results} />
+        <div className="container">
+          <Results results={results} />
+        </div>
       </div>
     );
   } else {
