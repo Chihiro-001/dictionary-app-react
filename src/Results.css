@@ -3,8 +3,10 @@
   border: 5px solid #09bdff;
   border-radius: 10px;
   box-shadow: 0 10px 10px rgb(0 0 0 /10%);
+  margin: 0 auto;
   margin-top: 20px;
   padding: 20px;
+  max-width: 940px;
 }
 .Results h2 {
   font-size: calc(4.325rem + 1vw);

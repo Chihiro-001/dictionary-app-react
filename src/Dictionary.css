@@ -8,6 +8,9 @@
   width: 100%;
   padding: 10px;
 }
+.Dictionary p {
+  margin-bottom: 0;
+}
 .Dictionary .title {
   font-size: 24px;
   font-weight: 700;
