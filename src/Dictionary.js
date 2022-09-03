@@ -13,7 +13,7 @@ export default function Dictionary() {
   function search() {
     // documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleDictionaryResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse).catch(errorFunction);
     // alert(`Searching ${keyword} definition`);
 
     //load pictures
@@ -23,12 +23,23 @@ export default function Dictionary() {
     const headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsUrl, { headers: headers }).then(handlePexelsResponse);
   }
+  function errorFunction() {
+    alert(
+      "Sorry, that word is not recognised. Please check the spelling and try again"
+    );
+  }
   function handleDictionaryResponse(response) {
-    setResults(response.data[0]);
+    // setResults(response.data[0]);
+    if (response.data[0]) {
+      setResults(response.data[0]);
+    }
   }
   function handlePexelsResponse(response) {
     // console.log(response.data);
-    setPhotos(response.data.photos);
+    if (response.data[0]) {
+      setPhotos(response.data.photos);
+    }
+    // setPhotos(response.data.photos);
   }
   function handleKeywordChange(event) {
     event.preventDefault();
